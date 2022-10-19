@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+a {
+    @apply md:mr-2 sm:mr-0.5 hover:text-[#E87BFF];
+}
+
+@media only screen and (min-width: 400px) {
+    a {
+        @apply mr-2;
+    }
+  }
+  @media only screen and (min-width: 850px) {
+    .main {
+        @apply w-52;
+    }
+  }
